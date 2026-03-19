@@ -2,5 +2,4 @@
   builder = "RAILPACK"
 
 [build.environment]
-  PHP_VERSION = "8.4"
-  PHP_EXTENSIONS = "gd"
+  PHP_EXTENSIONS = "ctype curl dom fileinfo filter gd hash mbstring openssl pcre pdo session tokenizer xml"
