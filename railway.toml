@@ -1,0 +1,5 @@
+[build]
+  builder = "RAILPACK"
+
+[build.environment]
+  PHP_VERSION = "8.4"
