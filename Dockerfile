@@ -37,4 +37,4 @@ RUN mkdir -p storage/framework/{sessions,views,cache,testing} storage/logs boots
     && chmod -R a+rw storage bootstrap/cache
 
 EXPOSE 80
-CMD ["frankenphp", "run", "--config", "/app/Caddyfile"]
+CMD php artisan migrate --force && frankenphp run --config /app/Caddyfile
